@@ -1,0 +1,156 @@
+.container_login{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.brLeft {
+  border-radius: 20px 0px 0px 20px;
+}
+.brRight {
+  border-radius: 0px 20px 20px 0px;
+}
+
+.coverBg {
+  /* transform: rotate(45deg); */
+  overflow: hidden;
+  transition: all ease-in-out 1000ms;
+  transform: translateX(0%);
+  transform: translateY(0%);
+}
+.layerBackground {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("../../img/login/bg2.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  transition: all ease-in-out 1000ms;
+  animation: spin 60s linear infinite;
+}
+
+.mainBgRight {
+  background: linear-gradient(to right, #7ed957, #2475da);
+}
+.mainBgLeft {
+  background: linear-gradient(to left, #6ade38, #011d3e);
+}
+
+/* registerPage  */
+.regPage {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #7ed957, #2475da);
+  transform: translateY(100%);
+  z-index: 2;
+  transition: all ease-in-out 1000ms;
+}
+
+.swapPage {
+  transition: all ease-in-out 1000ms;
+  transform: translateY(0%);
+}
+
+/* loginPage */
+.cusbg {
+  position: absolute;
+  bottom: 0;
+  rotate: -45deg;
+  right: 0;
+  z-index: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.qtvBg {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* action  */
+.toTheRight {
+  transform: translateX(100%);
+  border-radius: 0px 20px 20px 0px !important;
+  /* transition: all ease-in-out 1000ms; */
+}
+
+
+/* blink blink  */
+.blink {
+  position: relative;
+  overflow: hidden;
+  margin: 25px 0 25px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.blink:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+
+.blink:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+
+.blink:active:after {
+  opacity: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* phone  */
+.brTop {
+  border-radius: 20px 20px 0px 0px;
+}
+.brBot {
+  border-radius: 0px 0px 20px 20px;
+}
+
+/* action  */
+.toTheBot{
+  transform: translateY(100%);
+  border-radius: 0px 0px 20px 20px;
+
+}

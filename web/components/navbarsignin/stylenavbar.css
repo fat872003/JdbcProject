@@ -1,0 +1,75 @@
+.sub-menu-wrap{
+    position: absolute;
+    top: 100;
+    right: 7%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5S;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 700px; 
+
+    /* sua cai high de display them o day */
+}
+
+.sub-menu{
+    background: #fff;
+    padding: 20px ;
+
+}
+.user-infor{
+    display: flex;
+    align-items: center;
+}
+.user-infor h3{
+
+  
+}
+
+.user-infor img{
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    margin: 15px 0 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0px;
+}
+
+.sub-menu-link img{
+    width: 30px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link p{
+width: 100%;
+}
+
+.sub-menu-link:hover p{
+    font-weight:600 ;
+}
+#sub-menu-link-admin{
+    padding-bottom: 4px;
+    
+}
+
+
+#imgAdmin{
+    width: 45px;
+    
+}
